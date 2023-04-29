@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Chalkduster";
+    src: url('Chalkduster.ttf');
+}
+html {
+    background: url('blackboard.png') black;
+    font-family: 'Chalkduster', sans-serif;
+    color: rgba(217, 215, 215, 0.75);
+}
+
+body {
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+#start {
+    font-size: 5em;
+    margin: auto;
+}
+
+#scroll {
+    font-size: 5em;
+    position: absolute;
+    top: -85px;
+}
+
+#input {
+    font-size: 3em;
+    height: 1.5em;
+    position: fixed;
+    bottom: 0;
+}

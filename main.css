@@ -1,20 +1,22 @@
 @font-face {
     font-family: "Chalkduster";
-    src: url('Chalkduster.ttf');
+    src: url('assets/Chalkduster.ttf');
 }
 html {
-    background: url('blackboard.png') black;
+    background: url('assets/blackboard.png') black;
     font-family: 'Chalkduster', sans-serif;
-    color: rgba(217, 215, 215, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 body {
     height: 100vh;
+    margin: 0;
 }
 
 #main {
     display: flex;
     height: 100vh;
+    flex-direction: column;
 }
 
 #start {
@@ -28,9 +30,13 @@ body {
     top: -85px;
 }
 
-#input {
+#bottom {
     font-size: 3em;
     height: 1.5em;
+    display: flex;
+    flex-direction: row;
     position: fixed;
     bottom: 0;
+    justify-content: space-between;
+    width: 80%;
 }
